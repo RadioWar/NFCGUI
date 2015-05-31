@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A74B7BE3-C623-4B3C-A59B-8A7542F6D44E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFCGui</RootNamespace>
+    <AssemblyName>NFCGUI-Pro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AccessCondition.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\ExcelIO.cs" />
+    <Compile Include="Common\LogManage.cs" />
+    <Compile Include="Common\MfocWorker.cs" />
+    <Compile Include="Common\NfcWorker.cs" />
+    <Compile Include="FrmKeyManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKeyManage.Designer.cs">
+      <DependentUpon>FrmKeyManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmKeyManage.resx">
+      <DependentUpon>FrmKeyManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc.dll" />
+    <None Include="Resources\mfoc.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libnfc.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libusb0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-anticol.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-dep-initiator.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-dep-target.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-emulate-forum-tag2.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-emulate-forum-tag4.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-emulate-tag.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-emulate-uid.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-list.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-mfclassic.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-mfsetuid.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-mfultralight.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-poll.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-probe.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-read-forum-tag3.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-relay.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfc-relay-picc.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico256.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

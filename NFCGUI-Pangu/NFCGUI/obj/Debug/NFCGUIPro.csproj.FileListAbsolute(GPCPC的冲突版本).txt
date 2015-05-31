@@ -1,0 +1,10 @@
+I:\微云网盘\网盘\59787\NFCGUIPro\trunk\NFCGui\bin\Debug\NFCGui.exe.config
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\bin\Debug\NFCGui.exe.config
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\bin\Debug\NFCGui.exe
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\bin\Debug\NFCGui.pdb
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGui.FrmKeyManage.resources
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGui.FrmMain.resources
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGui.Properties.Resources.resources
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGUIPro.csproj.GenerateResource.Cache
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGui.exe
+D:\微云网盘\59787\NFCGUIPro\trunk\NFCGui\obj\Debug\NFCGui.pdb
