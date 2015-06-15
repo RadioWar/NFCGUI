@@ -37,8 +37,8 @@ V1.5版本（最后一个纯NFCGUI版本）
 	3.	增加基于MIFARE CLASSIC系列的控制位功能
 
 #NFCGUI界面截图：
-![image](http://wiki.radiowar.org/images/d/de/LibnfcGUI-RadioWar.jpg) #NFCGUI使用说明：
-NFCGUI必须与编译好的libnfc放在相同目录下，否者无法执行相关命令，按照Libnfc的设备支持列表，NFCGUI支持所有基于PN532芯片解决方案，所以在香港代购回来的ACR122U使用毫无问题！
+![image](http://wiki.radiowar.org/images/d/de/LibnfcGUI-RadioWar.jpg) 
 
-#NFCGUI是否开源 ？
-NFCGUI只是一个Windows下的图形操作界面，保持了Libnfc程序的完整性，并且NFCGUI将会面向有志于共同维护该项目的朋友开源。
+#NFCGUI使用说明：
+
+NFCGUI必须与编译好的libnfc放在相同目录下，否者无法执行相关命令，按照Libnfc的设备支持列表，NFCGUI支持所有基于PN532芯片解决方案，所以在香港代购回来的ACR122U使用毫无问题！
